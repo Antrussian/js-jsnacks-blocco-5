@@ -21,4 +21,8 @@ const automobili = [
     { marca: 'Chevrolet', modello: 'Bolt', alimentazione: 'elettrico' }
   ];
   
-  console.log(automobili);
+  const autoBenzina = automobili.filter(auto => auto.alimentazione === 'benzina');
+  const autoDiesel = automobili.filter(auto => auto.alimentazione === 'diesel');
+  const altreAuto = automobili.filter(auto => auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel');
+
+  console.log(autoBenzina, autoDiesel, altreAuto);
