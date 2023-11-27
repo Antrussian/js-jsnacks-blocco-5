@@ -25,4 +25,6 @@ const automobili = [
   const autoDiesel = automobili.filter(auto => auto.alimentazione === 'diesel');
   const altreAuto = automobili.filter(auto => auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel');
 
-  console.log(autoBenzina, autoDiesel, altreAuto);
+  console.log(autoBenzina);
+  console.log(autoDiesel);
+  console.log(altreAuto);
